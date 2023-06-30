@@ -23,5 +23,6 @@ class JunitHelperTest {
         assertArrayEquals( new String[]{ "Args" }, args );
         assertEquals( "Args", args[ 0 ] );
     }
+
 }
 
