@@ -6,9 +6,13 @@ import java.util.Random;
 import jdk.incubator.vector.IntVector;
 import jdk.incubator.vector.VectorSpecies;
 
-public class VectorTest {
+public class VectorJun {
 
     static final VectorSpecies<Integer> SPECIES = IntVector.SPECIES_PREFERRED;
+
+    public VectorJun( String[] args ){
+
+    }
 
     public static void main( String[] args ) {
 
@@ -27,7 +31,7 @@ public class VectorTest {
 
         long endTm = System.nanoTime();
 
-        System.out.printf(" time was %d nanoSecs %n", (endTm - start)/1000 );
+        System.out.printf(" time was %d microSecs %n", (endTm - start)/1000 );
     }
 
     public static int[] addTwoVectorArrays(int[] arr1, int[] arr2) {
@@ -36,4 +40,10 @@ public class VectorTest {
         var result = v1.add(v2);
         return result.toArray();
     }
+
+    public void someUselessMethod() {
+        System.out.println("this is useless");
+    }
+
+
 }
