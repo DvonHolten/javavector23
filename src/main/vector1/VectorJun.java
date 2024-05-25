@@ -1,3 +1,7 @@
+//
+//  History:
+//  30-jun-23, dvh  experiments with java vector api
+//
 package vector1;
 
 
